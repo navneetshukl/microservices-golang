@@ -33,7 +33,8 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-    environment: POSTGRES_USER=postgres
+    environment: 
+      POSTGRES_USER=postgres
       POSTGRES_PASSWORD=password
       POSTGRES_DB=users
 
